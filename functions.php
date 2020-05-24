@@ -22,4 +22,18 @@ function register_menus() {
 }
 add_action('init', 'register_menus');
 
+function hierarchical_category_tree( $cat = 0 ) {
+  $next = get_categories('hide_empty=false&orderby=name&order=ASC&parent=' . $cat);
+
+  if( $next ) :
+    foreach( $next as $cat ) :
+	    echo '<ul><li>';
+	    echo '<a href="' . get_category_link( $cat->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $cat->name ) . '" ' . '>'.$cat->name.' ('. $cat->count . ')</a>  ';
+	    hierarchical_category_tree( $cat->term_id );
+    endforeach;
+  endif;
+
+  echo '</li></ul>'; echo "\n";
+}
+
 ?>
