@@ -5,8 +5,7 @@ A WordPress theme based on Tacit CSS
 
 
 ## What is the Minimalist theme? 
-The Minimalist theme is the WordPress theme powering https://www.marcomatta.com.  
-It's a simple, minimalistic, bare-bones theme based on [Tacit CSS](http://yegor256.github.io/tacit/).
+The Minimalist is a simple, minimalistic, bare-bones theme based on [Tacit CSS](http://yegor256.github.io/tacit/).
 
 ## How to install
 As usual, simply drag the theme folder to your website's `/wp-content/themes/` folder, and activate it from the WordPress Appareance tab.
